@@ -28,6 +28,10 @@
                 <tr>
                     <td><?= $mostrar['nombres'] ?></td>
                     <td><?= $mostrar['email'] ?></td>
+                    <td>
+                        <a href="">Editar</a>
+                        <a href="">Eliminar</a>
+                    </td>
                 </tr>
             <?php } ?>
         </table>
