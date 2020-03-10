@@ -1,21 +1,10 @@
 <?php 
-    //Datos de conexión
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $db = "personas";
+    include('includes/db.php');
 
-    //Crear la conexión
-    $con = new mysqli($host, $user, $password, $db);
-
-    //Prueba conexión
+    $sql = "select * from personas";
     
-    $query = "select * from personas";
-    
-    $result = $con->query($query)
+    $result = DB::query($sql);
 
-
-    //$con->close();
 ?>
 
 <!DOCTYPE html>
