@@ -5,7 +5,7 @@ class DB {
     //Datos de conexión
     static $host = "localhost";
     static $user = "root";
-    static $password = "";-
+    static $password = "";
     static $db = "personas";   
 
     public static function init(){
