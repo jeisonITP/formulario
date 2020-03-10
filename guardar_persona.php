@@ -32,5 +32,5 @@
 
     $con->close();
 
-    header('Location: crear.php');
+    header('Location: index.php');
 ?>
