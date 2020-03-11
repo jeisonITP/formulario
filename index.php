@@ -22,6 +22,7 @@
             <tr>
                 <td>Nombres</td>
                 <td>Email</td>
+                <td>Acciones</td>
             </tr>
             
             <?php while($mostrar=mysqli_fetch_array($result)){ ?>
@@ -29,7 +30,7 @@
                     <td><?= $mostrar['nombres'] ?></td>
                     <td><?= $mostrar['email'] ?></td>
                     <td>
-                        <a href="">Editar</a>
+                        <a href="editar.php?id=<?= $mostrar['id'] ?>">Editar</a>
                         <a href="">Eliminar</a>
                     </td>
                 </tr>
