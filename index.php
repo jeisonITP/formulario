@@ -1,4 +1,5 @@
 <?php 
+    include('includes/verify_install.php');
     include('includes/db.php');
 
     $sql = "select * from personas";
