@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?php 
+    $title = "Crear persona";
+    include('templates/header.php'); 
+?>
 
-    <style>
-        .form-group{
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
-</head>
-<body>
-    <form action="guardar_persona.php" method="post">
-        <div>
-            <h3>Crear Usuarios</h1>
-        </div>
-        <div class="form-group">
-            <label for="">Nombre</label>
-            <input type="text" name="nombre">
-        </div>
+<form action="guardar_persona.php" method="post">
+    <div>
+        <h3>Crear Usuarios</h1>
+    </div>
+    <div class="form-group">
+        <label for="">Nombre</label>
+        <input type="text" name="nombre">
+    </div>
 
-        <div class="form-group">
-            <label for="">Email</label>
-            <input type="text" name="email">
-        </div>
+    <div class="form-group">
+        <label for="">Email</label>
+        <input type="text" name="email">
+    </div>
 
-        <div>
-            <button type="submit">Guardar</button>
-            <a href="index.php">Volver</a>
-        </div>
-    </form>
+    <div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="index.php">Volver</a>
+    </div>
+</form>
 
-</body>
-</html>
+<?php include('templates/footer.php') ?>
